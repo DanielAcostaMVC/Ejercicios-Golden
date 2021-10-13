@@ -42,3 +42,5 @@ Pero bueno, lo que realmente me costó trabajo en este reto, fue realizar el pro
 ## I - WORKOUTS
 
  - 0X01 [Decoración de Interiores](https://github.com/DanielAcostaMVC/1_decoracion_interiores_coaching)
+
+ - 0X02 ...Figma en proceso...
