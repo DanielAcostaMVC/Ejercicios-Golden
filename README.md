@@ -39,4 +39,6 @@ Pero bueno, lo que realmente me costó trabajo en este reto, fue realizar el pro
 
 [Reto Pago con Tarjeta de Crédito](https://www.figma.com/file/Ak8fOrDlBLBZ9ROCiySNKo/Reto_CreditCard?node-id=86%3A1766)
 
+## I - WORKOUTS
 
+ - 0X01 [Decoración de Interiores](https://github.com/DanielAcostaMVC/1_decoracion_interiores_coaching)
