@@ -1,0 +1,250 @@
+
+:root {
+    --ancho-pantalla: 1440px;
+    --alto-pantalla: 800px;
+    --machete-top: 60px;
+    --foto-deco: url(componentes/drawers-desktop.jpg);
+    --foto-avatar: url(componentes/avatar-michelle.jpg);
+    --flecha: url(componentes/flecha.png);
+    --ancho-tarjeta: 50.7%;
+    --alto-tarjeta: 35%;
+    --top-tarjeta: 32.5%;
+    --alto-mueble: 100%;
+    --ancho-mueble: 39%;
+    --borde-mueble: 10px 0px 0px 10px;
+    --contenido-alto: 73%;
+    --contenido-ancho: 61%;
+    --contenido-derecha: 0px;
+    --contenido-top: 0px;
+    --borde-contenido: 0px 10px 0px 0px;
+    --espacio-lados: 40px;
+    --tamanho-titulo: 20.5px;
+    --alto-letra: 28px;
+    --tamanho-p: 13px;
+    --influyente-alto: 27%;
+    --influyente-gordo: 61%;
+    --borde-influyente: 0px 0px 10px 0px;
+    --relleno-top: 20px;
+    --alto-letra-p: 18px;
+    --borde-redes: 10px 10px 10px 10px;
+    --alto-redes: 55px;
+    --ancho-redes: 248px;
+    --sombra-redes: 2px 4px 4px rgba(158, 175, 194, 0.5);
+    --ver-puntero: visible;
+    --red-derecha: -62px;
+    --red-abajo: 97px;
+}
+
+@media (max-width: 1400px){
+    :root {
+        --ancho-pantalla: 375px;
+        --alto-pantalla: 667px;
+        --machete-top: 126px;
+        --foto-deco: url(componentes/drawers-movil.jpg);
+        --ancho-tarjeta: 87%;
+        --alto-tarjeta: 77%;
+        --top-tarjeta: 11%;
+        --alto-mueble: 39%;
+        --ancho-mueble: 100%;
+        --borde-mueble: 10px 10px 0px 0px;
+        --contenido-alto: 48%;
+        --contenido-ancho: 100%;
+        --contenido-derecha: 0px;
+        --contenido-top: 200px;
+        --borde-contenido: 0px;
+        --espacio-lados: 32px;
+        --tamanho-titulo: 17px;
+        --alto-letra: 24px;
+        --tamanho-p: 13.2px;
+        --influyente-alto: 13%;
+        --influyente-gordo: 100%;
+        --borde-influyente: 0px 0px 10px 10px;
+        --relleno-top: 24px;
+        --alto-letra-p: 19px;
+        --borde-redes: 0px 0px 10px 10px;
+        --alto-redes: 64px;
+        --ancho-redes: 327px;
+        --sombra-redes: 0px 0px 0px rgba(158, 175, 194, 0);
+        --ver-puntero: hidden;
+        --red-derecha: 0px;
+        --red-abajo: 0px;
+    }
+}
+
+@media (max-height: 860px) {
+    :root {
+        --machete-top: 10px;
+    }
+}
+
+body {
+    background-color: #000;
+}
+
+
+.fondo {
+    background-color: #ECF2F8;
+    width: var(--ancho-pantalla, 1440px);
+    height: var(--alto-pantalla, 800px);
+    position: relative;
+    margin: auto;
+    top: var(--machete-top, 60px);
+}
+
+
+.tarjeta {
+    background-color: #FFF;
+    position: relative;
+    margin: auto;
+    width: var(--ancho-tarjeta, 50.7%);
+    height: var(--alto-tarjeta, 35%);
+    top: var(--top-tarjeta, 32.5%);
+    /*display: block;*/
+    filter: drop-shadow(10px 30px 20px rgba(158, 175, 194, 0.15));
+    border-radius: 10px;
+}
+
+.marco-foto {
+    position: relative;
+    height: var(--alto-mueble, 100%);
+    width: var(--ancho-mueble, 39%);
+    background: var(--foto-deco, url(componentes/drawers.jpg));
+    /*background-color: green;*/
+    border-radius: var(--borde-mueble, 10px 0px 0px 10px);
+}
+
+.contenido {
+    position: absolute;
+    height: var(--contenido-alto, 73%);
+    width: var(--contenido-ancho, 61%);
+    right: var(--contenido-derecha, 0px);
+    top: var(--contenido-top, 0px);
+    /*background-color: yellow;*/
+    border-radius: var(--borde-contenido, 0px 10px 0px 0px);
+}
+
+/*.smaller-image {
+    height: 100%;
+}*/
+
+h1 {
+    font-family: Manrope, Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: var(--tamanho-titulo, 20.5px);
+    line-height: var(--alto-letra, 28px);
+    padding-top: var(--relleno-top, 20px);
+    padding-left: var(--espacio-lados, 40px);
+    padding-right: var(--espacio-lados, 40px);
+    color: #48556A;
+    /*background-color: blue;*/
+}
+
+p {
+    font-family: Manrope, Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--tamanho-p, 13px);
+    line-height: var(--alto-letra-p, 18px);
+    letter-spacing: 0.02em;
+    padding-top: 5px;
+    padding-left: var(--espacio-lados, 40px);
+    padding-right: var(--espacio-lados, 40px);
+    color: #6D7F97;
+    /*background-color: red;*/
+}
+
+strong {
+    width: 117px;
+    height: 18px;
+    
+    color: #48556A;
+}
+
+.influencer {
+    visibility: visible;
+    position: absolute;
+    height: var(--influyente-alto, 27%);
+    width: var(--influyente-gordo, 61%);
+    right: 0px;
+    bottom: 0px;
+    /*background-color: orange;*/
+    border-radius: var(--borde-influyente, 0px 0px 10px 0px);
+}
+
+.porta-retrato {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin-top: 4px;
+    margin-left: var(--espacio-lados, 40px);
+    background: var(--foto-avatar, url(componentes/avatar-michelle.jpg));
+    /*background-color: brown;*/
+    border-radius: 20px 20px 20px 20px;
+}
+
+#my-michelle {
+    position: absolute;
+    height: 60%;
+    width: 37%;
+    margin: auto;
+    left: 0px;
+    top: 0px;
+    padding-top: 4px;
+    padding-left: 94px;
+    /*background-color: chocolate;*/
+}
+
+.share {
+    position: absolute;
+    height: 50%;
+    width: 10%;
+    height: 32px;
+    width: 32px;
+    right: var(--espacio-lados, 40px);
+    top: 8px;
+    background: var(--flecha, url(componentes/flecha.png));
+    background-color: #ECF2F8;
+    border-radius: 16px 16px 16px 16px;
+}
+
+.share:hover .redes{
+    visibility: visible;
+}
+   
+.share:hover .influencer {
+        visibility: hidden;
+}
+
+.redes {
+    /*visibility: hidden;*/
+    position: absolute;
+    height: var(--alto-redes, 55px);
+    width: var(--ancho-redes, 248px);
+    right: var(--red-derecha, -62px);
+    bottom: var(--red-abajo, 97px);
+    background-color: #48556A;
+    border-radius: var(--borde-redes, 10px 10px 10px 10px);
+    box-shadow: var(--sombra-redes, 2px 4px 4px rgba(158, 175, 194, 0.5));
+}
+
+.puntero {
+    visibility: var(--ver-puntero, visible);
+    position: absolute;
+    width: 22.6px;
+    height: 22.6px;
+    background-color: #48556A;
+    transform: rotate(45deg);
+    top: 44px;
+    right: 107.5px;
+    box-shadow: 2px 2px 2px rgba(158, 175, 194, 0.6);
+}
+
+#face {
+    position: relative;
+    left: 80px;
+    top: 20px;
+}
+
+
+
