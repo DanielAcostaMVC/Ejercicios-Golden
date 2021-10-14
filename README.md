@@ -41,6 +41,6 @@ Pero bueno, lo que realmente me costó trabajo en este reto, fue realizar el pro
 
 ## I - WORKOUTS
 
- - 0X01 [Decoración de Interiores](https://github.com/DanielAcostaMVC/1_decoracion_interiores_coaching)
+ - 0x01 [Decoración de Interiores](https://www.figma.com/file/QSKrn3CNaK7MLLc2aocqQn/1_Deco_int_coaching?node-id=62%3A11)
 
- - 0X02 ...Figma en proceso...
+ - 0x02 [Fylo Data Storage](https://www.figma.com/file/xPQV1vNwTFiHaeVu7Qd4En/2_Fylo_data_storage?node-id=3%3A26)
