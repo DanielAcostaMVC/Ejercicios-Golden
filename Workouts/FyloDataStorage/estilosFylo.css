@@ -1,0 +1,71 @@
+:root {
+    --ancho-pantalla: 1440px;
+    --alto-pantalla: 800px;
+    --bg-imagen: url(assets/bg-desktop.png);
+    --alto-bg: 420px;
+    --ancho-contenedor-storage: 350px;
+    --arriba-contenedor-storage: 289px;
+    --izquierda-contenedor-storage: 260px;
+    --sombra-contenedores: -20px 50px 40px 10px rgba(12, 18, 44, 0.3);
+    --borde-contenedores: 10px;
+    --borde-contenedor-storage: 10px 100px 10px 10px;
+
+}
+
+@media (max-width: 1450px){
+    :root {
+        --ancho-pantalla: 375px;
+        --alto-pantalla: 667px;
+        --bg-imagen: url(assets/bg-mobile.png);
+        --alto-bg: 667px;
+        --ancho-contenedor-storage: 325px;
+        --arriba-contenedor-storage: 127px;
+        --izquierda-contenedor-storage: 25px;
+        --sombra-contenedores: 0px 0px 0px 0px rgba(12, 18, 44, 0);
+        --borde-contenedores: 10px;
+        --borde-contenedor-storage: 10px 100px 10px 10px;
+    }
+}
+
+/*
+@media (max-height: 850px){
+    :root {
+        --ancho-pantalla: 375px;
+        --alto-pantalla: 667px;
+        --bg-imagen: url(assets/bg-mobile.png);
+        --alto-bg: 667px;
+    }
+}
+*/
+
+body {
+    background-color: #AAA;
+}
+
+
+.formato {
+    background-color: #0C122C;
+    width: var(--ancho-pantalla, 1440px);
+    height: var(--alto-pantalla, 800px);
+    position: relative;
+    margin: auto;
+}
+
+.bg-formato {
+    position: absolute;
+    width: var(--ancho-pantalla, 1440px);
+    height: var(--alto-bg, 667px);
+    bottom: 0px;
+    background: var(--bg-imagen, url(assets/bg-desktop.png));
+}
+
+.contenedor-storage {
+    position: absolute;
+    width: var(--ancho-contenedor-storage, 350px);
+    height: 201px;
+    top: var(--arriba-contenedor-storage, 289px);
+    left: var(--izquierda-contenedor-storage, 260px);
+    background-color:#1D2C67;
+    box-shadow: var(--sombra-contenedores, -20px 50px 40px 10px rgba(12, 18, 44, 0.3));
+    border-radius: var(--borde-contenedor-storage, 10px 100px 10px 10px);
+}
