@@ -25,6 +25,9 @@
     --izq-caja-barra: 39px;
     --ancho-caja-barra: 461px;
     --ancho-barra: 339px;
+    --arriba-globo: 289px;
+    --izquierda-globo: 961px;
+    --borde-globo: 10px 10px 0px 10px;
 }
 
 @media (max-width: 1450px){
@@ -54,6 +57,9 @@
         --izq-caja-barra: 31px;
         --ancho-caja-barra: 263px;
         --ancho-barra: 193px;
+        --arriba-globo: 468px;
+        --izquierda-globo: 99px;
+        --borde-globo: 10px;
     }
 }
 
@@ -236,3 +242,34 @@ h6 {
     border-radius: 7px;
 
 }
+
+.bola {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #FFF;
+}
+
+.globo {
+
+    position: absolute;
+    top: var(--arriba-globo, 289px);
+    left: var(--izquierda-globo, 961px);
+    width: 179px;
+    height: 94px;
+    border-radius: var(--borde-globo, 10px 10px 0px 10px);
+    background-color: #FFF;
+}
+
+.punta {
+
+    position: absolute;
+    
+
+}
+
+
+
