@@ -28,6 +28,7 @@
     --arriba-globo: 289px;
     --izquierda-globo: 961px;
     --borde-globo: 10px 10px 0px 10px;
+    --ver-punta: visible;
 }
 
 @media (max-width: 1450px){
@@ -60,6 +61,7 @@
         --arriba-globo: 468px;
         --izquierda-globo: 99px;
         --borde-globo: 10px;
+        --ver-punta: hidden;
     }
 }
 
@@ -183,7 +185,6 @@ h4 {
     color: #FFF;
     padding-left: var(--espacio-izq-h4, 39px);
     margin-top: var(--margen-arriba-h4, 40px);
-    background-color: tomato;
 }
 
 h5 {
@@ -197,8 +198,9 @@ h5 {
     text-align: left;
     padding-left: var(--espacio-izq-h5, 39px);
     margin-top: var(--margen-arriba-h5, 44px);
-    background-color: turquoise;
+    /*background-color: turquoise;*/
     width: 30%;
+    color: #FFF;
 }
 
 h6 {
@@ -212,11 +214,12 @@ h6 {
     text-align: left;
     padding-right: var(--espacio-der-h6, 40px);
     margin-top: var(--margen-arriba-h6, 100px);
-    background-color: fuchsia;
+   /*background-color: fuchsia;*/
     text-align: right;
     width: 30%;
     top:0px;
     right: 0px;
+    color: #FFF;
 }
 
 .caja-barra {
@@ -259,17 +262,83 @@ h6 {
     top: var(--arriba-globo, 289px);
     left: var(--izquierda-globo, 961px);
     width: 179px;
-    height: 94px;
+    height: 72px;
     border-radius: var(--borde-globo, 10px 10px 0px 10px);
     background-color: #FFF;
 }
 
 .punta {
-
+    visibility: var(--ver-punta, visible);
     position: absolute;
-    
+    width: 22px;
+    height: 22px;
+    top: 361px;
+    left: 1118px;
+    background-color: #FFF; 
 
 }
 
+.saca-punta {
+    visibility: var(--ver-punta, visible);
+    position: absolute;
+    width: 31.1px;
+    height: 10px;
+    top: 371px;
+    left: 1110px;
+    background-color:#1D2C67;
+    transform: rotate(45deg);
+    border-radius: 0px 0px 20px 20px
+}
 
+.cuadro {
+    visibility: var(--ver-punta, visible);
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 374px;
+    left: 1116px;
+    background-color: #1D2C67;
+
+}
+
+h2 {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    /* identical to box height */
+    
+    text-align: right;
+    letter-spacing: 0.01em;
+    
+    color: #050A20;
+    position: absolute;
+    width: 67px;
+    height: 47px;
+    left: 20px;
+    top: -20px;
+    background-color: yellow;
+}
+
+h3 {
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12.5px;
+    line-height: 15px;
+    /* identical to box height */
+    
+    text-align: right;
+    letter-spacing: 0.04em;
+    
+    color: #94949C;
+
+    background-color: blue;
+    padding-right: 40px;
+    margin-top: 30px;
+
+
+}
 
