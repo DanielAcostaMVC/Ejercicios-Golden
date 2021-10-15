@@ -1,4 +1,5 @@
 :root {
+    --azul-muy-oscuro: #0C122C;
     --ancho-pantalla: 1440px;
     --alto-pantalla: 800px;
     --bg-imagen: url(assets/bg-desktop.png);
@@ -9,7 +10,17 @@
     --sombra-contenedores: -20px 50px 40px 10px rgba(12, 18, 44, 0.3);
     --borde-contenedores: 10px;
     --borde-contenedor-storage: 10px 100px 10px 10px;
-
+    --ancho-contenedor-info: 540px;
+    --alto-contenedor-info: 154px;
+    --arriba-contenedor-info: 336px;
+    --izquierda-contenedor-info: 640px;
+    --lado-caja: 48px;
+    --espacio-izq-h4: 39px;
+    --margen-arriba-h4: 40px;
+    --espacio-izq-h5: 39px;
+    --margen-arriba-h5: 44px;
+    --espacio-der-h6: 40px;
+    --margen-arriba-h6: 100px;
 }
 
 @media (max-width: 1450px){
@@ -24,6 +35,17 @@
         --sombra-contenedores: 0px 0px 0px 0px rgba(12, 18, 44, 0);
         --borde-contenedores: 10px;
         --borde-contenedor-storage: 10px 100px 10px 10px;
+        --ancho-contenedor-info: 325px;
+        --alto-contenedor-info: 160px;
+        --arriba-contenedor-info: 344px;
+        --izquierda-contenedor-info: 25px;
+        --lado-caja: 48px;
+        --espacio-izq-h4: 49px;
+        --margen-arriba-h4: 32px;
+        --espacio-izq-h5: 32px;
+        --margen-arriba-h5: 46px;
+        --espacio-der-h6: 31px;
+        --margen-arriba-h6: 94px;
     }
 }
 
@@ -44,7 +66,7 @@ body {
 
 
 .formato {
-    background-color: #0C122C;
+    background-color: var(--azul-muy-oscuro, #0C122C);
     width: var(--ancho-pantalla, 1440px);
     height: var(--alto-pantalla, 800px);
     position: relative;
@@ -68,4 +90,117 @@ body {
     background-color:#1D2C67;
     box-shadow: var(--sombra-contenedores, -20px 50px 40px 10px rgba(12, 18, 44, 0.3));
     border-radius: var(--borde-contenedor-storage, 10px 100px 10px 10px);
+}
+
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 41px;
+}
+
+.caja {
+    position: absolute;
+    bottom: 40px;
+    left: 41px;
+    background-color: var(--azul-muy-oscuro, #0C122C);
+    border-radius: var(--borde-contenedores, 10px);
+    width: var(--lado-caja, 48px);
+    height: var(--lado-caja, 48px);
+}
+
+.dos {
+    position: absolute;
+    left: 105px;
+}
+/*
+.caja-tres {
+    position: absolute;
+    bottom: 40px;
+    left: 169px;
+    background-color: var(--azul-muy-oscuro, #0C122C);
+    border-radius: var(--borde-contenedores, 10px);
+    width: var(--lado-caja, 48px);
+    height: var(--lado-caja, 48px);
+}*/
+
+.tres{
+    position: absolute;
+    left: 169px;
+}
+
+.centrado {
+    position: absolute;
+    top: 12px;
+    left: 14px;
+}
+
+.centrado--folder {
+    position: absolute;
+    top: 14px;
+    left: 12px;
+}
+
+.centrado--upload {
+
+    position: absolute;
+    top: 16px;
+    left: 12px;
+}
+
+.contenedor-info-gb {
+
+    position: absolute;
+    width: var(--ancho-contenedor-info, 540px);
+    height: var(--alto-contenedor-info, 154px);
+    top: var(--arriba-contenedor-info, 336px);
+    left: var(--izquierda-contenedor-info, 640px);
+    background-color:#1D2C67;
+    box-shadow: var(--sombra-contenedores, -20px 50px 40px 10px rgba(12, 18, 44, 0.3));
+    border-radius: var(--borde-contenedores, 10px);
+}
+
+h4 {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #FFF;
+    padding-left: var(--espacio-izq-h4, 39px);
+    margin-top: var(--margen-arriba-h4, 40px);
+    background-color: tomato;
+}
+
+h5 {
+
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    padding-left: var(--espacio-izq-h5, 39px);
+    margin-top: var(--margen-arriba-h5, 44px);
+    background-color: turquoise;
+    width: 30%;
+}
+
+h6 {
+    position: absolute;
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    padding-right: var(--espacio-der-h6, 40px);
+    margin-top: var(--margen-arriba-h6, 100px);
+    background-color: fuchsia;
+    text-align: right;
+    width: 30%;
+    top:0px;
+    right: 0px;
 }
