@@ -185,6 +185,7 @@ h4 {
     color: #FFF;
     padding-left: var(--espacio-izq-h4, 39px);
     margin-top: var(--margen-arriba-h4, 40px);
+    /*background-color: tomato;*/
 }
 
 h5 {
