@@ -280,6 +280,11 @@ h3 {
     --aside2-heigth: 76.7%;
     --bar-width: 85.4%;
     --h4-justify: left;
+    --span-margin: 40px;
+    --visibility: visible;
+    --globe-radius: 10px 10px 0px 10px;
+    --globe-top: 0px;
+    --globe-right: 40px;
 }
 
 @media  (max-width:920px) {
@@ -294,6 +299,11 @@ h3 {
     --aside2-heigth: 42.4%;
     --bar-width: 80.9%;
     --h4-justify: center;
+    --span-margin: 32px;
+    --visibility: hidden;
+    --globe-radius: 10px;
+    --globe-top: 340px;
+    --globe-right: 73px;
 }
 
 }
@@ -384,8 +394,10 @@ aside {
     width: var(--bar-width, 85.4%);
     height: 20px;
     border-radius: 10px;
+    padding: 0;
     background-color: var(--azul-muy-oscuro, black);
     position: absolute;
+    top: 72px;
 }
 
 .progress {
@@ -395,7 +407,7 @@ aside {
     height: 14px;
     padding: 0px;
     border-radius: 7px;
-    margin-top: 2.5px;
+    margin-top: 2px;
     margin-left: 2.5px;
     background: linear-gradient(90deg, #FFA399, #FF4C97);
     justify-content: right;
@@ -428,6 +440,96 @@ h4 {
     margin-right: 40px;
     border: solid 1px salmon;
     position: relative;
-    bottom: 32px;
+    bottom: 25px;
 }
 
+h5 {
+
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    width: 100%;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    border: solid 1px brown;
+    top: 80px;
+    
+}
+
+h5 span:nth-child(1){
+    margin-left: var(--span-margin, 40px);
+}
+
+h5 span:nth-child(2){
+    margin-right: var(--span-margin, 40px);
+}
+
+.globe {
+    width: 179px;
+    height: 72px;
+    background-color: #FFF;
+    position: absolute;
+    top: var(--globe-top, 0px);
+    right: var(--globe-right, 40px);
+    border-radius: var(--globe-radius, 10px 10px 0px 10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.globe::after {
+    visibility: var(--visibility, visible);
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: var(--azul-oscuro, blue);
+    bottom: -22px;
+    right: -22px;
+}
+
+.globe::before {
+    visibility: var(--visibility, visible);
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: #FFF;
+    right: -11px;
+    bottom: -22px;
+    transform: skewX(45deg);
+}
+
+
+h2 {
+    font-family: Bold-Raleway;
+    font-size: 44px;
+    color: #050A20;
+    font-weight: lighter;
+    margin-left: 23px;
+    border: solid 1px blueviolet;
+}
+
+h3 {
+
+    font-family: Raleway;
+    color: #94949C;
+    font-size: 12.5px;
+    margin-right: 23px;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    line-height: 15px;
+    font-style: normal;
+    border: solid 1px green;
+}
+
+@font-face {
+    font-family: Bold-Raleway;
+    src: url(assets/Raleway-Bold.ttf);
+}
