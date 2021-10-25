@@ -1,0 +1,108 @@
+
+
+:root {
+    --dark-blue: hsl(240, 38%, 20%);
+    --grayish-blue: hsl(240, 18%, 77%);
+    --main-width: 1440px;
+    --main-height: 800px;
+    --main-direction: row;
+    --content-width: 555px;
+    --content-height: 574px;
+    --p-height: 36.8%;
+    --p-size: 32px;
+    --p-line-height: 44px;
+    --span-width: 115.7%;
+    --span-text-align: left;
+}
+
+@media  (max-width:1110px) {
+
+    :root {
+        --main-width: 375px;
+        --main-height: 667px;
+        --main-direction: column-reverse;
+        --content-width: 309px;
+        --content-height: 280px;
+        --p-height: 51.4%;
+        --p-size: 17.5px;
+        --p-line-height: 24px;
+        --span-width: 98%;
+        --span-text-align: center;
+    }
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    border: solid 1px red;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    width: var(--main-width, 1440px);
+    height: var(--main-height, 800px);
+    /*border: solid 1px blue; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: var(--main-direction, row);
+}
+
+article {
+    width: var(--content-width, 555px);
+    height: var(--content-height, 574px);
+   /* border: solid 3px green;*/
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section {
+    width: var(--content-width, 555px);
+    height: var(--content-height, 574px);
+    border: solid 3px yellow;
+}
+
+p {
+    font-family: Inter;
+    font-size: var(--p-size, 32px);
+    font-style: normal;
+    font-weight: 300;
+    line-height: var(--p-line-height, 44px);
+    width: 100%;
+    height: var(--p-height, 36.8%);
+    display: flex;
+    /*flex-flow: left wrap;*/
+    /*border: solid 1px orange;*/
+    position: relative;
+}
+
+span {
+    display: flex;
+    /*border: solid blueviolet 2px;*/
+    position: absolute;
+    width: var(--span-width, 115.7%);
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    text-align: var(--span-text-align, left);
+}
+
+#uno {
+    visibility: hidden;  
+}
+
+#dos {
+    visibility: visible;
+}
