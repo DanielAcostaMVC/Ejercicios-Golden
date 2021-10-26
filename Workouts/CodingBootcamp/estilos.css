@@ -29,6 +29,8 @@
     --bg-right: -92px;
     --bg-width: 125%;
     --bg-height: 114%;
+    --slide-top: 512px;
+    --slide-right: 365px;
 }
 
 @media  (max-width:1110px) {
@@ -62,6 +64,8 @@
         --bg-right: -7px;
         --bg-width: 327px;
         --bg-height: 308px;
+        --slide-top: 225px;
+        --slide-right: 99px;
     }
 
     h5 {
@@ -81,7 +85,11 @@
     }
 
     #jt {
-        transform: scale(0.485);
+        transform: scale(0.7);
+    }
+
+    .slide {
+        transform: scale(0.69);
     }
 
 }
@@ -272,10 +280,12 @@ section {
 
 #ts {
     border-radius: 4px;
+    box-shadow: -5px 20px 40px 0px hsla(240, 18%, 77%, 0.4);
 }
 
 #jt {
     border-radius: 4px;
+    box-shadow: -5px 20px 40px 0px hsla(240, 18%, 77%, 0.4);
 }
 
 .bgImage {
@@ -289,6 +299,36 @@ section {
     z-index: 0;
     top: var(--bg-top, -64px);
     right: var(--bg-right, -92px);
+}
+
+.slide {
+    position: absolute;
+    width: 112px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: #FFF;
+    z-index: 2;
+    top: var(--slide-top, 512px);
+    right: var(--slide-right, 300px);
+    display: flex;
+}
+
+.prev {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.next {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .curve {
