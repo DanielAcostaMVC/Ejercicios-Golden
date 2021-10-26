@@ -104,7 +104,7 @@
     }
 
     #jt {
-        transform: scale(0.7);
+        transform: scale(0.47);
     }
 
     .slide {
@@ -229,38 +229,33 @@ span {
 }
 
 #uno {
-    visibility: visible; 
+    display: none;/*visibility: visible; */
 }
 
 #dos {
-    /*visibility: hidden;*/
-    display: none;
+    visibility: visible;
+   /* display: none;*/
 }
 
-#Tanya {
-    /*position: absolute;*/
-    /*visibility: visible;*/
-    display: block;
+#person {
+    display: block;/*display: block;*/
 }
 
-#Sinclair {
+#profession {
     /*position: relative;*/
     /*visibility: visible;*/
-    display: block;
+    display: block;/*display: block;*/
 }
-
+/*
 #John {
-    /*position: absolute;*/
-    /*visibility: hidden;*/
+    
     display: none;
 }
 
 #Tarkpor {
-    /*position: relative;
-    visibility: hidden;*/
     display: none;
 }
-
+*/
 
 
 section {
@@ -286,13 +281,13 @@ section {
 }
 
 #fotaza {
-    display: flex;
+    display: none ;/*flex; */
     position: absolute;
     top: var(--fotos-top, 0px);
 }
 
 #foto {
-    display: none;
+    display: flex; /*none;*/
     position: absolute;
     top: var(--fotos-top, 0px);
 }
@@ -339,6 +334,7 @@ section {
     justify-content: center;
     align-items: center;
     position: relative;
+    border-radius: 28px 0px 0px 28px;
 }
 
 .next {
@@ -348,7 +344,46 @@ section {
     justify-content: center;
     align-items: center;
     position: relative;
+    border-radius: 0px 28px 28px 0px;
 }
+
+.prev:hover { 
+    animation-name: mujer;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+
+}
+
+
+/*
+@media  {
+
+
+}
+
+.prev:hover:{ 
+    animation-name: mujer;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
+*/
+
+
+@keyframes mujer {
+
+   
+    100% {
+        
+        /*background-color: hsla(240, 18%, 77%, 0.25);*/
+    }
+    
+}
+
+.next:hover {
+    background-color: hsla(240, 18%, 77%, 0.25);
+}
+
+
 
 .curve {
     position: absolute;
