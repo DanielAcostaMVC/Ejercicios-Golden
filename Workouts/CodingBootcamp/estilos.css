@@ -33,6 +33,25 @@
     --slide-right: 365px;
 }
 
+
+@media only screen and (min-width:1110px) and (max-width:1440px){
+   
+    main{
+        transform:scale(0.75);
+        transition-duration: .5s;;
+    }
+    
+}
+
+@media only screen and (min-height:0px) and (max-height:810px){
+   
+    main{
+        transform:scale(0.5);
+        transition-duration: 2s;;
+    }
+    
+}
+
 @media  (max-width:1110px) {
 
     :root {
