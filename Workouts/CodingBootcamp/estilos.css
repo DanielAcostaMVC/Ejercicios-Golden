@@ -13,6 +13,15 @@
     --p-line-height: 44px;
     --span-width: 115.7%;
     --span-text-align: left;
+    --span-top: -16px;
+    --footer-direction: row;
+    --quotes-top: 72px;
+    --footer-justify: left;
+    --h6-margin: 16px;
+    --curve-height: 154px;
+    --curve-width: 610px;
+    --footer-top: -25px;
+    --h3-top: 0px;
 }
 
 @media  (max-width:1110px) {
@@ -24,11 +33,33 @@
         --content-width: 309px;
         --content-height: 280px;
         --p-height: 51.4%;
-        --p-size: 17.5px;
+        --p-size: 17.6px;
         --p-line-height: 24px;
-        --span-width: 98%;
+        --span-width: 100%;
         --span-text-align: center;
+        --span-top: -12px;
+        --footer-direction: column;
+        --quotes-top: 5px;
+        --footer-justify: center;
+        --h6-margin: 0px;
+        --curve-height: 75px;
+        --curve-width: 300px;
+        --footer-top: -53px;
+        --h3-top: -32px;
     }
+
+    h5 {
+        transform: scale(0.75);
+    }
+
+    h6 {
+        transform: scale(0.75);
+    }
+
+    .quotes {
+        transform: scale(0.5);
+    }
+
 }
 
 *{
@@ -52,10 +83,11 @@ main {
     display: flex;
     width: var(--main-width, 1440px);
     height: var(--main-height, 800px);
-    /*border: solid 1px blue; */
+    border: solid 1px blue; 
     justify-content: center;
     align-items: center;
     flex-direction: var(--main-direction, row);
+    position: absolute;
 }
 
 article {
@@ -66,15 +98,20 @@ article {
     justify-content: left;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
 }
 
-section {
-    width: var(--content-width, 555px);
-    height: var(--content-height, 574px);
-    border: solid 3px yellow;
+
+
+.quotes {
+    height: 100px;
+    width: 120px;
+    position: relative;
+    left: 95px;
+    top: var(--quotes-top, 72px);
 }
 
-p {
+h3 {
     font-family: Inter;
     font-size: var(--p-size, 32px);
     font-style: normal;
@@ -83,9 +120,59 @@ p {
     width: 100%;
     height: var(--p-height, 36.8%);
     display: flex;
-    /*flex-flow: left wrap;*/
-    /*border: solid 1px orange;*/
     position: relative;
+    color: var(--dark-blue, black);
+    top: var(--h3-top, 0px);
+}
+
+footer {
+    border: solid 1px brown;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: var(--footer-justify, left); 
+    flex-direction: var(--footer-direction);
+    position: relative;
+    top: var(--footer-top, -25px);
+
+}
+/*
+.alto-footer{
+    height: 30%;
+    border: solid 1px green;
+    display: flex;
+    align-items: flex-start;
+}
+
+.bajo-footer{
+    height: 70%;
+    border: solid 1px red;
+}
+*/
+h5 {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: var(--dark-blue, black);
+    border: solid 1px blue;
+    position: relative;
+    text-align: var(--span-text-align, left);
+}
+
+h6 {
+    letter-spacing: 0.01em;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    color: var(--grayish-blue, gray);
+    border: solid 1px green;
+    position: relative;
+    margin-left: var(--h6-margin, 16px);
+    text-align: var(--span-text-align, left);
 }
 
 span {
@@ -95,14 +182,67 @@ span {
     width: var(--span-width, 115.7%);
     height: 100%;
     left: 0px;
-    top: 0px;
+    top: var(--span-top, -16px);
     text-align: var(--span-text-align, left);
 }
 
 #uno {
-    visibility: hidden;  
+    visibility: visible; 
 }
 
 #dos {
-    visibility: visible;
+    /*visibility: hidden;*/
+    display: none;
 }
+
+#Tanya {
+    /*position: absolute;*/
+    /*visibility: visible;*/
+    display: block;
+}
+
+#Sinclair {
+    /*position: relative;*/
+    /*visibility: visible;*/
+    display: block;
+}
+
+#John {
+    /*position: absolute;*/
+    /*visibility: hidden;*/
+    display: none;
+}
+
+#Tarkpor {
+    /*position: relative;
+    visibility: hidden;*/
+    display: none;
+}
+
+
+
+section {
+    width: var(--content-width, 555px);
+    height: var(--content-height, 574px);
+    border: solid 3px yellow;
+}
+
+.curve {
+    /*box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;*/
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: var(--curve-height, 154px);
+    width: var(--curve-width, 610px);
+    background-image: url(assets/pattern-curve.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*
+#bg-curve {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}*/
