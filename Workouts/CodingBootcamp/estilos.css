@@ -10,7 +10,7 @@
     --p-size: 32px;
     --p-line-height: 44px;
     --span-width: 115.7%;
-    --span-text-align: left;
+    --text-align: left;
     --span-top: -16px;
     --footer-direction: row;
     --quotes-top: 72px;
@@ -22,7 +22,7 @@
     --curve-width: 610px;
     --footer-top: -25px;
     --h3-top: 0px;
-    --section-justify: right;
+    --section-perfil-justify: right;
     --perfil-lado: 540px;
     --fotos-top: 0px;
     --bg-top: -64px;
@@ -32,7 +32,6 @@
     --slide-top: 512px;
     --slide-right: 365px;
 }
-
 
 @media only screen and (min-width:1110px) and (max-width:1440px){
    
@@ -64,7 +63,7 @@
         --p-size: 17.6px;
         --p-line-height: 24px;
         --span-width: 100%;
-        --span-text-align: center;
+        --text-align: center;
         --span-top: -12px;
         --footer-direction: column;
         --quotes-top: 5px;
@@ -76,7 +75,7 @@
         --curve-width: 300px;
         --footer-top: -53px;
         --h3-top: -32px;
-        --section-justify: center;
+        --section-perfil-justify: center;
         --perfil-lado: 253px;
         --fotos-top: -140px;
         --bg-top: -26.5px;
@@ -103,10 +102,6 @@
         transform: scale(0.47);
     }
 
-    #jt {
-        transform: scale(0.47);
-    }
-
     .slide {
         transform: scale(0.69);
     }
@@ -121,7 +116,6 @@
 
 body {
     display: flex;
-    /*border: solid 1px red;*/
     padding: 0px;
     margin: 0px;
     justify-content: center;
@@ -134,7 +128,6 @@ main {
     display: flex;
     width: var(--main-width, 1440px);
     height: var(--main-height, 800px);
-    /*border: solid 1px blue; */
     justify-content: center;
     align-items: center;
     flex-direction: var(--main-direction, row);
@@ -144,7 +137,6 @@ main {
 article {
     width: var(--content-width, 555px);
     height: var(--content-height, 574px);
-   /* border: solid 3px green;*/
     display: flex;
     justify-content: left;
     align-items: center;
@@ -152,8 +144,6 @@ article {
     position: relative;
     z-index: 2;
 }
-
-
 
 .quotes {
     height: 100px;
@@ -178,126 +168,69 @@ h3 {
 }
 
 footer {
-    /*border: solid 1px brown;*/
     height: 100px;
     width: 100%;
     display: flex;
     justify-content: var(--footer-justify, left); 
     flex-direction: var(--footer-direction);
     position: relative;
-    top: var(--footer-top, -25px);
-
+    top: var(--footer-top, -25px);  
 }
 
-h5 {
+.letras {
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
-    font-weight: bold;
-    line-height: 24px;
     letter-spacing: 0.01em;
-    color: var(--dark-blue, black);
-    /*border: solid 1px blue;*/
     position: relative;
-    text-align: var(--span-text-align, left);
+    text-align: var(--text-align, left);
+}
+
+h5 { 
+    font-weight: bold;
+    line-height: 24px;  
+    color: var(--dark-blue, black);
     margin-top: var(--h5-margin-top, 0px);
 }
 
 h6 {
-    letter-spacing: 0.01em;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
     font-weight: normal;
     color: var(--grayish-blue, gray);
-    /*border: solid 1px green;*/
-    position: relative;
     margin-left: var(--h6-margin-left, 16px);
-    text-align: var(--span-text-align, left);
     margin-top: var(--h6-margin-top, 0px);
 }
 
 span {
     display: flex;
-    /*border: solid blueviolet 2px;*/
     position: absolute;
     width: var(--span-width, 115.7%);
     height: 100%;
     left: 0px;
     top: var(--span-top, -16px);
-    text-align: var(--span-text-align, left);
+    text-align: var(--text-align, left);
 }
-
-#uno {
-    display: none;/*visibility: visible; */
-}
-
-#dos {
-    visibility: visible;
-   /* display: none;*/
-}
-
-#person {
-    display: block;/*display: block;*/
-}
-
-#profession {
-    /*position: relative;*/
-    /*visibility: visible;*/
-    display: block;/*display: block;*/
-}
-/*
-#John {
-    
-    display: none;
-}
-
-#Tarkpor {
-    display: none;
-}
-*/
-
 
 section {
     width: var(--content-width, 555px);
     height: var(--content-height, 574px);
-    /*border: solid 3px yellow;*/
     position: relative;
     display: flex;
-    justify-content: var(--section-justify, right);
+    justify-content: var(--section-perfil-justify, right);
     align-items: flex-start;
 }
-
 
 .perfil {
     width: var(--perfil-lado, 540px);
     height: var(--perfil-lado, 540px);
-    position: relative;
     display: flex;
-    justify-content: var(--section-justify, right);;
+    justify-content: var(--section-perfil-justify, right);;
     align-items: flex-start;
-    /*border: solid 1px blue;*/
     z-index: 1;
-}
-
-#fotaza {
-    display: none ;/*flex; */
-    position: absolute;
-    top: var(--fotos-top, 0px);
-}
-
-#foto {
-    display: flex; /*none;*/
     position: absolute;
     top: var(--fotos-top, 0px);
 }
 
 #ts {
-    border-radius: 4px;
-    box-shadow: -5px 20px 40px 0px hsla(240, 18%, 77%, 0.4);
-}
-
-#jt {
     border-radius: 4px;
     box-shadow: -5px 20px 40px 0px hsla(240, 18%, 77%, 0.4);
 }
@@ -309,7 +242,6 @@ section {
     height: var(--bg-height, 114%);
     background-size: cover;
     background-repeat: no-repeat;
-    /*border: solid 1px green;*/
     z-index: 0;
     top: var(--bg-top, -64px);
     right: var(--bg-right, -92px);
@@ -327,63 +259,30 @@ section {
     display: flex;
 }
 
-.prev {
+nav {
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+.prev {
     border-radius: 28px 0px 0px 28px;
 }
 
 .next {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
     border-radius: 0px 28px 28px 0px;
 }
 
 .prev:hover { 
-    animation-name: mujer;
-    animation-duration: 300ms;
-    animation-fill-mode: forwards;
-
-}
-
-
-/*
-@media  {
-
-
-}
-
-.prev:hover:{ 
-    animation-name: mujer;
-    animation-duration: 300ms;
-    animation-fill-mode: forwards;
-}
-*/
-
-
-@keyframes mujer {
-
-   
-    100% {
-        
-        /*background-color: hsla(240, 18%, 77%, 0.25);*/
-    }
-    
+    background-color: hsla(240, 18%, 77%, 0.25);
 }
 
 .next:hover {
     background-color: hsla(240, 18%, 77%, 0.25);
 }
-
-
 
 .curve {
     position: absolute;
