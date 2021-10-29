@@ -44,3 +44,7 @@ Pero bueno, lo que realmente me costó trabajo en este reto, fue realizar el pro
  - 0x01 [Decoración de Interiores](https://www.figma.com/file/QSKrn3CNaK7MLLc2aocqQn/1_Deco_int_coaching?node-id=62%3A11)
 
  - 0x02 [Fylo Data Storage](https://www.figma.com/file/xPQV1vNwTFiHaeVu7Qd4En/2_Fylo_data_storage?node-id=3%3A26)
+ 
+ - 0x03 [Coding Bootcamp](https://www.figma.com/file/fsJzLLIoaO5UXLefES8sDn/3_coding_bootcamp_testimonials_slider?node-id=5%3A70)
+ 
+ - 0x04 [Four Card Feature Section](https://www.figma.com/file/6tdmKy6grn5shdeJV4jzVK/4-four-card-feature-section?node-id=3%3A26)
