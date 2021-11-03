@@ -1,6 +1,37 @@
 :root {
+    --body-height: 100vh;
     --main-width: 1440px;
     --main-height: 922px;
+    --header-height: 297px;
+    --h3-margin: 0px 375px 0px 375px;
+    --aside-direction: row;
+    --aside-width: 1140px;
+    --aside-height: 560px;
+    --div-width: 33.3%;
+    --extremes-height: 100%;
+    --middle-height: 100%;
+}
+
+@media  (max-width:1110px) {
+
+    :root {
+        --body-height: 1500px;
+        --main-width: 375px;
+        --main-height: 1360px;
+        --header-height: 310px;
+        --h3-margin: 0px 30px 0px 30px;
+        --aside-direction: column;
+        --aside-width: 335px;
+        --aside-height: 985px;
+        --div-width: 100%;
+        --extremes-height: 25%;
+        --middle-height: 50%;
+    }
+
+    article {
+        transform: scale(0.89);
+    }
+
 }
 
 *{
@@ -9,19 +40,18 @@
     margin: 0px;
 }
 
-
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    height: var(--body-height, 100vh);
     background-color: gray;
 }
 
 main {
     background-color: #FAFAFA;
-    border: solid 1px blue;
+    /*border: solid 1px blue;*/
     width: var(--main-width, 1440px);
     height: var(--main-height, 922px);
     font-family: Poppins;
@@ -36,26 +66,31 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 297px;
-    border: solid 1px brown;
+    height: var(--header-height, 297px);
+    /*border: solid 1px brown;*/
+}
+
+h1 {
+    text-align: center;
 }
 
 h3 {
-    margin: 0px 400px 0px 400px;
+    margin: var(--h3-margin, 0px 375px 0px 375px);
     text-align: center;
+    /*border: solid 1px blue;*/
 }
 
 aside {
     display: flex;
-    flex-direction: row;
-    width: 1140px;
-    height: 560px;
+    flex-direction: var(--aside-direction, row);
+    justify-content: space-between;
+    width: var(--aside-width, 1140px);
+    height: var(--aside-height, 560px);
     border: solid 1px green;
 }
 
 div {
-    width: 33.3%;
-    height: 100%;
+    width: var(--div-width, 33.3%);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -63,21 +98,53 @@ div {
 }
 
 .extremes {
-    border: solid 1px yellow;
-    
+    /*border: solid 1px yellow;*/
+    height: var(--div-height, 100%);
 }
 
 .middle {
-    border: solid 1px red;
+    /*border: solid 1px red;*/
+    height: var(--div-height, 100%);
 }
 
 article {
+    background-color: #FFF;
     width: 350px;
     height: 250px;
     border-radius: 6px;
-    border: solid 1px green;
-    padding-top: 20px;
-    /*position: relative;*/
+    /*border: solid 1px violet;*/
+    /*padding-top: 20px;*/
+    /*border-top-width: 4px;
+    border-top-color: green;*/
+    position: relative;
+    box-shadow: -1px 10px 20px rgba(64, 123, 191, 0.25);
+}
+
+span {
+    position: absolute;
+    border-radius: 6px;
+    width: 100%;
+    height: 12px;    
+}
+
+#cyanBar {
+    background: linear-gradient(180deg, hsl(180, 62%, 55%) 0%, hsl(180, 62%, 55%) 39%, #FFF 40%, #FFF 100%);
+}
+
+#redBar {
+    background: linear-gradient(180deg, hsl(0, 78%, 62%) 0%, hsl(0, 78%, 62%) 39%, #FFF 40%, #FFF 100%);
+}
+
+#orangeBar {
+    background: linear-gradient(180deg, hsl(34, 97%, 64%) 0%, hsl(34, 97%, 64%) 39%, #FFF 40%, #FFF 100%);
+}
+
+#blueBar {
+    background: linear-gradient(180deg, hsl(212, 86%, 64%) 0%, hsl(212, 86%, 64%) 39%, #FFF 40%, #FFF 100%);
+}
+
+h4 {
+    padding-top: 19px;
 }
 
 h4, h5{
