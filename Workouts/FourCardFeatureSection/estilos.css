@@ -16,6 +16,10 @@
 
 @media only screen and (min-width:1140px) and (max-width:1440px){
    
+    * {
+        transition: ease-in-out 1s;    
+    }
+
     main{
         transform:scale(0.75);
         transition-duration: .5s;;
@@ -25,6 +29,10 @@
 
 @media only screen and (min-height:0px) and (max-height:810px){
    
+    * {
+        transition: ease-in-out 1s;    
+    }
+
     main{
         transform:scale(0.5);
         transition-duration: 1s;;
@@ -33,6 +41,10 @@
 }
 
 @media  (max-width:1140px) {
+
+    * {
+        transition: ease-in-out 1s;    
+    }
 
     :root {
         --body-height: 1500px;
