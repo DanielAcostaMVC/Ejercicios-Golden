@@ -48,3 +48,7 @@ Pero bueno, lo que realmente me costó trabajo en este reto, fue realizar el pro
  - 0x03 [Coding Bootcamp](https://www.figma.com/file/fsJzLLIoaO5UXLefES8sDn/3_coding_bootcamp_testimonials_slider?node-id=5%3A70)
  
  - 0x04 [Four Card Feature Section](https://www.figma.com/file/6tdmKy6grn5shdeJV4jzVK/4-four-card-feature-section?node-id=3%3A26)
+ 
+ - 0x05 [Base-apparel-coming-soon](https://www.figma.com/file/KZUMTx2M5ENFWENdJvM755/5_base_apparel?node-id=0%3A1)
+ 
+ - 0x06 [Intro-component-with-signup-form](https://www.figma.com/file/iPiBhUAxvCwNI7KsDyS4FF/6_Intro_Component_with_Signup_form?node-id=0%3A1)
