@@ -37,7 +37,7 @@ Pero bueno, lo que realmente me costó trabajo en este reto, fue realizar el pro
 
 ...y el ejercicio quedó de la siguiente manera (los invito a ver la presentación):
 
-[Reto Pago con Tarjeta de Crédito](https://www.figma.com/proto/Ak8fOrDlBLBZ9ROCiySNKo/Reto_CreditCard?node-id=159%3A3586&scaling=contain&page-id=86%3A1766&starting-point-node-id=159%3A2728&show-proto-sidebar=1)
+[Reto Pago con Tarjeta de Crédito](https://www.figma.com/proto/Ak8fOrDlBLBZ9ROCiySNKo/Reto_CreditCard?page-id=86%3A1766&node-id=159%3A3256&viewport=241%2C48%2C0.25&scaling=contain&starting-point-node-id=159%3A2390&show-proto-sidebar=1)
 
 ## I - WORKOUTS
 
