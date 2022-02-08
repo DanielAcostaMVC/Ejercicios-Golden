@@ -43,6 +43,8 @@ Pero bueno, lo que realmente me costó trabajo en este reto, fue realizar el pro
 
 [Biografía-Luis Antonio Calvo](https://codepen.io/goldenBerryDras/pen/MWOJrNN)
 
+![image](Workouts/freeCodeCampProjects/tributePage/vistaPrevia.png)
+
 ## I - WORKOUTS
 
  - 0x01 [Decoración de Interiores](https://www.figma.com/file/QSKrn3CNaK7MLLc2aocqQn/1_Deco_int_coaching?node-id=62%3A11)
