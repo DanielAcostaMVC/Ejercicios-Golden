@@ -40,7 +40,7 @@ Pero bueno, lo que realmente me costó trabajo en este reto, fue realizar el pro
 [Reto Pago con Tarjeta de Crédito](https://www.figma.com/proto/Ak8fOrDlBLBZ9ROCiySNKo/Reto_CreditCard?page-id=86%3A1766&node-id=159%3A3256&viewport=241%2C48%2C0.25&scaling=contain&starting-point-node-id=159%3A2390&show-proto-sidebar=1)
 
 ## 3. Página tributo para Web Design Projects de freeCodeCamp
-![Biografía-Luis Antonio Calvo] (https://codepen.io/goldenBerryDras/pen/MWOJrNN)
+[Biografía-Luis Antonio Calvo](https://codepen.io/goldenBerryDras/pen/MWOJrNN)
 
 ## I - WORKOUTS
 
