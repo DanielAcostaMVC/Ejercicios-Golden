@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" lang="ES">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis Antonio Calvo</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css">
+    <style>
+
+
+:root {
+ --colombia: url(bandera.jpg);
+ --width-b: 1551px;
+
+}
+
+    @media  (max-width:1600px) {
+
+    * {
+        transition: ease-in-out 1s;    
+    }
+
+        :root {
+        --colombia: url(banderita.jpg);
+        --width-b: 592px;
+        }
+    }
+
+        *{
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 98vw;
+            background: linear-gradient(90deg, hsl(34, 97%, 64%) 0%, hsla(34, 40%, 85%, 0.9) 30%, #DDD 90%, #FFF 95%);
+            font-family: Poppins;
+        }
+
+        main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+        }
+
+        #img-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #bandera {
+            background: var(--colombia, url(bandera.jpg));
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: var(--width-b, 1551px);
+            height: 683px;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        #image {
+            position: absolute;
+            width: 440px;
+            height: 543px;
+            border-radius: 75px;
+            box-shadow: -40px 40px 40px rgba(219, 222, 224, 0.7), 40px -40px 40px rgb(255, 255, 255);
+        }
+
+        #img-caption{
+            display: flex;
+            position:relative;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            width: 70%;
+            color: rgb(76, 78, 97);
+            font-style: normal;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        h1 {
+            padding-top: 35px;
+            padding-bottom: 15px;
+            text-align: center;
+            font-size: 50px;
+            color: rgb(50,50,50);
+        }
+        h3 {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            color: rgb(140,60,60);
+            font-style: italic;
+            width: 70%;
+        }
+        h2 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: left;
+            font-size: 30px;
+            color: rgb(60,60,60);
+        }
+
+        h4 {
+            position:relative;
+            left: 0px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: left;
+            font-size: 24px;
+            color: rgb(60,60,60);
+            font-weight: bold;
+            width: 80%;
+        }
+
+        #tribute-info{
+            display: flex;
+            position: relative;
+            width: 80vw;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        p {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-align: justify;
+            font-size: 16px;
+            color: rgb(65,65,65);
+            width: 80%;
+        }
+
+        #tarjetas {
+            position: relative;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+        }
+
+        #A {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            background-color: aqua;
+            margin: 50px;
+            padding: 15px;
+            text-align: justify;
+        }
+
+        #B {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            background-color:palegoldenrod;
+            margin: 50px;
+            padding: 15px;
+            text-align: justify;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .lista{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<main id="main">
+<h1 id="title">Luis Antonio Calvo</h1>
+<h3>El Chopin criollo, que tras la adversidad perseveró y luego desarrolló gran parte de su obra, tras tener que trasladarse forzosamente a un leprocomio en la segunda mitad de su vida</h3>
+<div id="img-div">
+    <div id="bandera"><img src="fotoLAC.png" alt="dibujo lapiz original hecho en figma para no atentar derechos de autor, sobre retrato de Luis Antonio Calvo" id="image"></div>
+    
+    <figcaption id="img-caption">Dibujo original hecho en computador, sobre fotografía de Luis Antonio Calvo de 1917, momento en que ya gozaba de fama pero a su vez recientemente le había sido diagnosticada una enfermedad marginal</figcaption>
+</div>    
+    <section id="tribute-info">
+        <h2>- Introducción:</h2>
+
+        <p>
+            Haciendo un sondeo de compositores colombianos, decidí investigar y hacer tributo a la vida y obra del maestro Luis Antonio Calvo, con tan solo escuchar unas pocas obras de su repertorio ya que en ellas se ve reflejada una verdadera identidad de aires colombianos, con un balance entre lo no tan simple y lo bello, donde también se trasmiten diferentes sentimientos como la nostalgia y otras veces alegría, por medio de su música llena de interesantes melodías y recursos armónicos donde se aprecia la influencia que recibió de compositores europeos; y en parte de su repertorio, acompañadas de ritmos típicos andinos colombianos que surgieron en aquella época. 
+        </p>
+        <p>
+            Guardando las proporciones musicales, se puede afirmar que el maestro Luis Antonio Calvo, fue un digno compositor romántico colombiano, así como en Europa lo fueron Beethoven o Chopin; ya que más allá de la música, a los tres los impulsó un espíritu que los llevó a hacer parte importante de su música, como medio de escape de las angustias y adversidades propias de sus vidas. 
+        </p>
+
+        <div id="tarjetas">
+            <div id="A"><span class="italic">“Últimamente me ha venido invadiendo una sensación. La sensación de que los Colombianos no sabemos quienes somos. Y por ese motivo llego aquí. Colombia necesita una identidad. Necesitamos una verdadera expresión de identidad como pueblo. Algo profundo, real, trascendental. Creo que nunca superaremos nuestros problemas y nunca podremos aspirar a nada si no logramos, primero, descubrirnos de VERDAD como pueblo. En nuestro pasado y en nuestras expresiones artísticas debemos buscar las respuestas. Es mi humilde opinión”</span> <br> tomado del comentario del usuario Leo Cort en YouTube, al escuchar el Intermezzo No 1 del maestro Calvo.</div>
+            <div id="B"><p>El maestro <a href="https://www.banrepcultural.org/biblioteca-virtual/credencial-historia/numero-120/emilio-murillo-gruta-simbolica-y-nacionalismo-musical" target="_blank">Emilio Murillo</a>, otro gran compositor nacionalista, quien fue pionero e impulsor de la música de géneros colombianos y muy proclive a exaltar la identidad nacional, dijo acerca de su colega contemporáneo Luis Antonio Calvo: </p><span class="italic">“Nunca pudimos imaginar que el dolor y la inspiración pudieran llegar a producir un resultado tan decisivo en nuestro arte musical nacional. Luis A. Calvo, que se había abstenido de cultivar las melodías que hemos convenido en llamar autóctonas, por fin comprendió que era un deber para Colombia el descender a elaborar obra con estos temas sometidos a la racha de odio, de burla, de hostilidad con que han sido mirados por los genios autoconsagrados que han explotado la educación artística en nuestro país, y en la soledad de su martirio comenzó a pulir las gemas de nuestras montañas y, elevando su espíritu a Dios, terminó con [...] lo que puede llamarse la más alta culminación del esfuerzo colombianista musical”.</span></div>
+        </div>
+
+        <h2>- Vida y obra:</h2>
+        <h4>De Gámbita a Tunja…</h4>
+        <p>Luis Antonio Calvo fue un músico colombiano, nació en el pueblo Gámbita del departamento de Santander el 28 de agosto de 1882.</p>
+        <p>Su madre, doña Marcelina Calvo, no vio un porvenir muy prometedor en el pueblo para sus hijos y siendo madre soltera, con gran valentía decidió marcharse alrededor de 1980, para lo cual vendió su casa y se trasladó a la ciudad de Tunja con sus dos hijos; es decir, cuando Luis Antonio Calvo era aun un niño junto con su hermana.</p>
+        <p>Esta primera época luego evocaría bellos recuerdos y nostalgia en el maestro Luis Antonio Calvo, lo cual lo ayudaría a ser uno de los máximos cultores de la música nacional, en cuya obra late en toda su dimensión la esencia de su pueblo.</p>
+        <p>A pesar de ello, los primeros 20 años de Luis Antonio Calvo fueron marcados por la pobreza y los prejuicios con respecto a su procedencia; entre otras cosas, quiso ser cura pero no lo permitieron por su estigma de ser hijo natural.</p>
+        <p>Ya ubicado en la ciudad de Tunja, fue integrante de los coros de la iglesia de los franciscanos, a los diez años fue platillero de la banda de Tunja y después asumió la ejecución del bombo, <span class="italic">“cuyo volumen constituía una pesada carga para mí, que era un chiquillo, y la llevé por más de cuatro años”</span>, recordaba. Después le fue concedida la plaza de bombardino.</p>
+        <p>Simultáneamente trabajaba como mensajero de una tienda de propiedad de un señor llamado Pedro León Gómez, un músico aficionado que interpretaba el violín y de quien aprendería a tocar violín y piano de forma empírica <span class="italic">“Fue el primer maestro, mi amoroso y querido maestro. El me dio a probar del dulce licor del arte"</span> afirmaba, a su vez ya sabía leer partituras y se fue convirtiendo en un gran ejecutante de la bandola, instrumento para el cual escribió su primera composición dedicada a su madre y aún una segunda, la danza titulada Livia.</p>
+        <p>En esa época también fue desarrollando su oído, su talento como músico y afianzando su oficio de interpretar música en salones de baile.</p>
+        <h4>En Bogotá…</h4>
+        <p>Buscando un mejor porvenir, Luis Antonio Calvo a la edad de 22 años se trasladó el 11 de mayo de 1905 junto con su madre y su hermana a Bogotá, también ante la falsa promesa que brindaba el gobierno de una beca en la Academia a todo aquel joven músico que perteneciera a una de las bandas de la capital, pero que requería las recomendaciones de altos personajes y de las cuales carecía.  De todas maneras Luis Antonio Calvo integró la banda del ejército y él mismo escribió lo siguiente acerca de aquella época <span class="italic">"Para agravar la situación, el gobierno decidió descontar el cinco por ciento a todo empleado del gobierno, pero de todos ellos, los que soportamos las peores consecuencias fuimos los del ejército, pues a nosotros, aparte del descuento anotado, se nos rebajó un grado por cuyo motivo los cincuenta pesos que yo ganaba quedaron reducidos a la insignificante suma de veinticinco pesos, cantidad insuficiente para atender las necesidades de mi vida. Año y medio duró ese lento padecer. Cuántos amargos días para mí! Qué pena tan grande la que sentía, cuando lleno de tristeza llegaba al apartamento que habitábamos, y mi cariñosa madre me invitaba a la mesa, sin haber yo llevado, desde días, un centavo para el yantar cotidiano"</span></p>
+        <p>La difícil situación, le sirvió de coraje para instrumentar su danza Livia y presentarla al director de la banda, con lo cual, fue aceptada para montarla e interpretarla, con gran acogida por parte del público. Desde entonces, el director decidió confiarle la instrumentación de la música que la banda tocaba y esto significó para el joven músico y su familia una mejora de las precarias condiciones en que se veía obligado a vivir.  La siguiente fue una anécdota narrada por Luis Antonio Calvo, acerca de esa etapa <span class="italic">“una tarde, en un concierto, la banda acababa de ejecutar un vals mío, vals instrumentado por mí pocos días antes; un joven de aspecto aristocrático se acercó a la banda e inquirió el nombre del vals que se acababa de oír y preguntó por su autor: una vez informado, se dirigió a mí para felicitarme con galantería sin igual. Al preguntarme dónde había hecho yo mis estudios de armonía, tuve que responderle con gran desconsuelo que yo ignoraba hasta las más elementales nociones de la teoría, de cuya afirmación sincera dudó, alegando que era imposible componer un vals como el ejecutado sin poseer los debidos conocimientos de armonía, a lo cual repliqué yo que sí, tampoco me explicaba cómo podía concebir esas cosas”</span>. De esa manera concretó su anhelo de estudiar, gracias a aquel hombre, Rafael Vásquez Flórez, que era profesor de armonía del Conservatorio.  Y el maestro Luis Antonio Calvo continuaba declarando <span class="italic">“Pero, vaivenes de la fortuna, poco después algunos profesores fueron destituidos con motivo de la reorganización llevada a cabo en aquel plantel por el maestro Guillermo Uribe Holguín, y por este motivo me vi obligado a abandonar la clase que galantemente me dictaba el inolvidable señor Rafael Vásquez Flórez por quien siempre he conservado un cariñoso recuerdo”</span>.</p>
+        <p>Después el violinista Leopoldo Carreño, viendo el talento de Luis Antonio Calvo intercedió para que le fuera concedida una beca. Esta vez bajo la dirección del maestro <a href="https://es.wikipedia.org/wiki/Guillermo_Uribe_Holgu%C3%ADn" target="_blank">Guillermo Uribe Holguín</a>, Calvo continuó sus estudios de armonía, clases de violoncello, aprendiendo las distintas escuelas musicales, entre ellas la rusa, la francesa y la alemana.</p>
+        <p>En aquel momento ya empezaba a gozar de reconocimiento, gracias a composiciones suyas como el Intermezzo No. l, Eclipse de belleza, el famoso Lejano azul, Anhelos (vals), uno de los más hermosos que ha dado la música colombiana, y Carmiña.</p>
+        <p>También fue ganando fama gracias a grabaciones realizadas de algunas piezas de su repertorio, por parte de los ingenieros scouts de la Victor quienes hacían giras en barco por toda América, pasando por Cuba hasta Argentina en búsqueda de talentos para realizar grabaciones fonográficas con revolucionarias tecnologías netamente acústicas hasta ese momento y que en 1913 hicieron una parada por Colombia, donde el maestro Luis Antonio Calvo fue uno de los seleccionados para ser incluido en sus producciones fonográficas, las cuales continuarían siendo explotadas en las siguientes décadas y cuya finalidad última era la de hacer popular la venta no solo de los discos fonográficos, sino también del lucrativo negocio de la venta de sus elegantes equipos de <a href="http://www.victor-victrola.com/8-1.htm" target="_blank">Victrola</a> diseñados para reproducir dichas grabaciones realizadas principalmente en diferentes partes de América, con lo cual también se contribuyó con la globalización de las músicas del mundo.</p>
+        <h4>Agua de Dios</h4>
+        <p>Pero cuando por fin todo parecía ir cada vez mejor para el maestro Luis Antonio Calvo, en el año 1916, a la edad de 33 años, le fue diagnosticada la enfermedad de Hansen (lepra), lo cual significaba que debía trasladarse de manera forzada al lazareto que era una especie de campo de concentración, enmascarado con el pretexto de cumplir leyes de salubridad, donde realmente la sociedad discriminaba y marginaba a los enfermos de lepra que eran mayormente pobres.  En muchas ocasiones hasta les quemaban la casa antes de obligarlos a ir al leprocomio.  Hay un famoso lugar llamado el Puente de los Suspiros, ubicado entre el municipio de Tocaima y el municipio de Agua de Dios, este puente era el límite hasta donde podían ir las personas que no se iban a radicar en Agua de Dios y que querían despedirse de sus familiares o seres queridos antes de que fuesen recluidos en aquel lugar.</p>
+        <p><span class="italic">“El terror de los espantos tocó a mis puertas y con fieras garras arrebató la relativa tranquilidad que disfrutábamos tres seres unidos [...] Me creo impotente para narrar las escenas de dolor y de angustia que por más de quince días precedieron al fatal desastre; pero, como para todo dolor humano hay un consuelo, en esta ocasión la gentil sociedad bogotana, siempre pronta a desplegar su proverbial y cariñosa solicitud hacia sus líricos infortunados, tuvo el más hermoso gesto para mí, el cual dulcificó mi inmensa pena”</span>, escribió Luis Antonio Calvo relatando ese momento de su vida, también haciendo referencia a un homenaje que le hicieron en el Teatro Colón como despedida.</p>            
+        <p>Fue así cuando el 12 de mayo de 1916 se recluyó en esta institución. A pesar de todo, los padres salesianos, que dirigían el lazareto, le brindaban facilidades a Calvo y lo instalaron en una casa donde el músico vivió con su familia.  Y lo más trascendental fue que a los pocos días la ciudadanía de Bogotá le donó un piano, gracias a lo cual, el maestro Calvo se pudo dedicar casi por completo al piano.</p> 
+        <p><span class="italic">“Cuando el espíritu amanece más sediento, toco y toco, con verdadero entusiasmo; evoco recuerdos viejos -siempre queridos- y con ello me olvido que estoy en esta tierra del infortunio; luego escribo música; convoco a mi casa niños y niñas y los hago ensayar cantos de distintos géneros; las noches las distraigo con mis amistades y así siempre con mi buena madre y mi querida hermanita, paso el tiempo casi agradablemente”</span></p>
+        <p>A pesar del exilio Luis A Calvo ya gozaba de fama y perduró siendo una figura pública, lo que le hizo posible realizar esporádicas salidas del lazareto, pero fue allí en Agua de Dios donde realizó gran parte de su legado musical.</p>
+        <p>Sus composiciones gozan de una sonoridad puramente americana, tropical en los aires populares andinos, pero sublime cuando desde los ríos escala a las alturas montañosas y celestes adornadas en la tarde o en la noche de colores románticos, sin duda el maestro Luis Antonio Calvo fue uno de los exponentes forjadores de la Música nacional, explorando desde el romanticismo hacia el nacionalismo.</p>
+        <p>Luis Antonio Calvo fallece en Agua de Dios, el 22 de abril de 1945, algunos pocos años después de haber contraído matrimonio y haber sido homenajeado en vida en Bogotá y Tunja.</p>
+        <h2>- Algunas de sus composiciones:</h2>
+        <div class="lista">
+            <li><a href="https://www.youtube.com/watch?v=NrGOk5CFEGM" target="_blank">Livia</a> - Primera obra registrada por el compositor</li>
+            <li><a href="https://www.youtube.com/watch?v=AGQBO5N6uOY" id="tribute-link" target="_blank">Lejano Azul y Malvaloca</a> - Dos piezas musicales para piano de Luis Antonio Calvo - Interpretadas por Teresita Gomez</li>
+            <li><a href="https://www.youtube.com/watch?v=4gYQQ_JNfdk" target="_blank">Adiós a Bogotá</a> - (Danza)</li>
+            <li><a href="https://www.youtube.com/watch?v=P8Sv5y9Koqg" target="_blank">Arroyito que murmuras</a> - (Pasillo)</li>
+            <li><a href="https://www.youtube.com/watch?v=u0ca189RHmg" target="_blank">Escenas pintorescas de Colombia</a></li>
+        </div>
+        
+
+
+    </section>
+
+<h3>por Daniel Acosta.</h3>
+<p>Esta biografía fue tomada de la Gran Enciclopedia de Colombia del Círculo de Lectores, tomo de biografías, basado en los siguientes enlaces de <a href="https://enciclopedia.banrepcultural.org/index.php/Luis_A_Calvo" target="_blank">Banrepcultural</a></p>
+<p><a href="https://www.banrepcultural.org/bogota/actividad/porque-en-el-dolor-tambien-se-canta-luis-calvo-y-la-musica-nacional-colombiana" target="_blank">Porque el dolor también se canta, Luis Antonio Calvo y la música nacional colombiana</a></p><br>
+</main>
+
+
+</body>
