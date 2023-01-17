@@ -39,6 +39,12 @@ Pero bueno, lo que realmente me costó trabajo en este reto, fue realizar el pro
 
 [Reto Pago con Tarjeta de Crédito](https://www.figma.com/proto/Ak8fOrDlBLBZ9ROCiySNKo/Reto_CreditCard?page-id=86%3A1766&node-id=159%3A3256&viewport=241%2C48%2C0.25&scaling=contain&starting-point-node-id=159%3A2390&show-proto-sidebar=1)
 
+## 3. Página tributo para Web Design Projects de freeCodeCamp
+
+[Biografía-Luis Antonio Calvo](https://codepen.io/goldenBerryDras/pen/MWOJrNN)
+
+![image](Workouts/freeCodeCampProjects/tributePage/vistaPrevia.png)
+
 ## I - WORKOUTS
 
  - 0x01 [Decoración de Interiores](https://www.figma.com/file/QSKrn3CNaK7MLLc2aocqQn/1_Deco_int_coaching?node-id=62%3A11)
@@ -52,3 +58,5 @@ Pero bueno, lo que realmente me costó trabajo en este reto, fue realizar el pro
  - 0x05 [Base-apparel-coming-soon](https://www.figma.com/file/KZUMTx2M5ENFWENdJvM755/5_base_apparel?node-id=0%3A1)
  
  - 0x06 [Intro-component-with-signup-form](https://www.figma.com/file/iPiBhUAxvCwNI7KsDyS4FF/6_Intro_Component_with_Signup_form?node-id=0%3A1)
+ 
+ 
